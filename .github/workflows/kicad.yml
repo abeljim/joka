@@ -1,0 +1,33 @@
+name: Kicad
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+env:
+  project_name: "joka"
+jobs:
+  ERC:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/inti-cmnb/kicad8_auto:1.8.1
+    steps:
+      - uses: actions/checkout@v3
+      - name: run erc
+        run: |
+          kicad-cli sch erc ${{env.project_name}}.kicad_sch --exit-code-violations --severity-warning --severity-error
+      - name: report
+        if: always()
+        run: cat ${{env.project_name}}.rpt
+  DRC:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/inti-cmnb/kicad8_auto:1.8.1
+    steps:
+      - uses: actions/checkout@v3
+      - name: run drc
+        run: |
+          kicad-cli pcb drc ${{env.project_name}}.kicad_pcb --exit-code-violations --severity-warning --severity-error
+      - name: report
+        if: always()
+        run: cat ${{env.project_name}}.rpt
