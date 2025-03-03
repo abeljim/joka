@@ -5,7 +5,7 @@
 	(uuid "d6046089-b4a7-4679-9f50-f3be1c432c46")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:C"
+		(symbol "joka:C"
 			(pin_numbers hide)
 			(pin_names
 				(offset 0.254)
@@ -141,7 +141,7 @@
 				)
 			)
 		)
-		(symbol "Device:C_Small"
+		(symbol "joka:C_Small"
 			(pin_numbers hide)
 			(pin_names
 				(offset 0.254) hide)
@@ -276,127 +276,6 @@
 				)
 			)
 		)
-		(symbol "Device:R"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "joka:PN7160B1HN_C100E"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -419,7 +298,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "QFN50P600X600X100-41N-D"
+			(property "Footprint" "joka:PN7160B1HNC100E"
 				(at 24.13 -70.79 0)
 				(effects
 					(font
@@ -1261,6 +1140,127 @@
 						)
 					)
 					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "joka:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2853,7 +2853,7 @@
 		(uuid "ede82d1a-01af-43b0-8eac-e078a26f2595")
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "joka:C_Small")
 		(at 96.52 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2879,7 +2879,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "joka:C_0805_2012Metric"
 			(at 96.52 134.62 0)
 			(effects
 				(font
@@ -2922,7 +2922,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "joka:C_Small")
 		(at 151.13 140.97 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2948,7 +2948,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "joka:C_0805_2012Metric"
 			(at 151.13 140.97 0)
 			(effects
 				(font
@@ -2991,7 +2991,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "joka:C_Small")
 		(at 81.28 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3017,7 +3017,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "joka:C_0805_2012Metric"
 			(at 81.28 60.96 0)
 			(effects
 				(font
@@ -3084,7 +3084,7 @@
 				)
 			)
 		)
-		(property "Footprint" "QFN50P600X600X100-41N-D"
+		(property "Footprint" "joka:PN7160B1HNC100E"
 			(at 151.13 152.07 0)
 			(effects
 				(font
@@ -3316,7 +3316,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "joka:C_Small")
 		(at 129.54 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3342,7 +3342,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "joka:C_0805_2012Metric"
 			(at 129.54 138.43 0)
 			(effects
 				(font
@@ -3385,7 +3385,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "joka:R")
 		(at 80.01 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3412,7 +3412,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "joka:R_0805_2012Metric"
 			(at 78.232 91.44 90)
 			(effects
 				(font
@@ -3455,7 +3455,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "joka:C")
 		(at 212.09 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3482,7 +3482,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "joka:C_0805_2012Metric"
 			(at 213.0552 82.55 0)
 			(effects
 				(font
@@ -3594,7 +3594,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "joka:C_Small")
 		(at 193.04 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3620,7 +3620,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "joka:C_0805_2012Metric"
 			(at 193.04 101.6 0)
 			(effects
 				(font
@@ -3663,7 +3663,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "joka:C")
 		(at 196.85 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3690,7 +3690,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "joka:C_0805_2012Metric"
 			(at 197.8152 82.55 0)
 			(effects
 				(font
@@ -3733,7 +3733,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "joka:C_Small")
 		(at 163.83 140.97 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3759,7 +3759,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "joka:C_0805_2012Metric"
 			(at 163.83 140.97 0)
 			(effects
 				(font
@@ -3802,7 +3802,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "joka:C_Small")
 		(at 180.34 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3828,7 +3828,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "joka:C_0805_2012Metric"
 			(at 180.34 101.6 0)
 			(effects
 				(font
@@ -3871,7 +3871,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "joka:C_Small")
 		(at 113.03 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3897,7 +3897,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "joka:C_0805_2012Metric"
 			(at 113.03 146.05 0)
 			(effects
 				(font

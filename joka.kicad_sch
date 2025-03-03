@@ -5,7 +5,7 @@
 	(uuid "312aae5a-af90-49c5-b809-4fcf3f39a79a")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:Conn_01x01_Socket"
+		(symbol "joka:Conn_01x01_Socket"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
@@ -125,7 +125,7 @@
 				)
 			)
 		)
-		(symbol "Connector:Conn_01x10_Pin"
+		(symbol "joka:Conn_01x10_Pin"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
@@ -1111,7 +1111,7 @@
 		(uuid "e323fdf5-5103-4513-b55a-ba09afcfd3a0")
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Socket")
+		(lib_id "joka:Conn_01x01_Socket")
 		(at 214.63 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1138,7 +1138,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "joka:PinSocket_1x01_P2.54mm_Vertical"
 			(at 214.63 88.9 0)
 			(effects
 				(font
@@ -1178,7 +1178,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Socket")
+		(lib_id "joka:Conn_01x01_Socket")
 		(at 214.63 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1205,7 +1205,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "joka:PinSocket_1x01_P2.54mm_Vertical"
 			(at 214.63 93.98 0)
 			(effects
 				(font
@@ -1245,7 +1245,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x10_Pin")
+		(lib_id "joka:Conn_01x10_Pin")
 		(at 60.96 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1270,7 +1270,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "joka:PinSocket_2x05_P2.54mm_Vertical"
 			(at 60.96 90.17 0)
 			(effects
 				(font
@@ -1535,7 +1535,7 @@
 			(uuid "9167bc78-377a-4e06-aa45-adb0b5cd3a6c")
 		)
 		(pin "VEN" input
-			(at 101.6 93.98 180)
+			(at 101.6 99.06 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1575,7 +1575,7 @@
 			(uuid "d4788bc0-8c15-4d5d-be81-edd7b67b389f")
 		)
 		(pin "IRQ" input
-			(at 101.6 99.06 180)
+			(at 101.6 93.98 180)
 			(effects
 				(font
 					(size 1.27 1.27)
